@@ -1,6 +1,6 @@
 class Line(p1: Point = Point (0.0, 0.0), p2: Point = Point (1.0, 0.0)) {
     var p1: Point = Point(0.0, 0.0)
-        set (value: Point){
+        set (value){
             if (value.isEqual(p2)){
                 field = p1
             } else {
@@ -8,7 +8,7 @@ class Line(p1: Point = Point (0.0, 0.0), p2: Point = Point (1.0, 0.0)) {
             }
         }
     var p2: Point = Point(1.0, 0.0)
-        set (value: Point) {
+        set (value) {
             if (value.isEqual(p1)) {
                 field = p2
             } else {
